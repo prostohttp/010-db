@@ -1,6 +1,7 @@
 
 
- ```db.books.insertMany([
+ ```
+ db.books.insertMany([
 {
 title: "Book 1",
 description: "Description of Book 1",
