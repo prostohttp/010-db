@@ -20,6 +20,7 @@ db.books.find({ title: "Вы не знаете JavaScript" });
 ```
 
 ```
+db.books.updateOne(
   { _id: ObjectId("001") },
   { $set: {
     description: "Новое описание",
