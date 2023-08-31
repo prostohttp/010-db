@@ -3,28 +3,27 @@
  ```
  db.books.insertMany([
 {
-title: "Book 1",
-description: "Description of Book 1",
-authors: "Author 1"
+title: "Вы не знаете JavaScript",
+description: "Книга о JavaScript",
+authors: "Автор 1"
 },
 {
-title: "Book 2",
-description: "Description of Book 2",
-authors: "Author 2"
+title: "Вы не знаете Node.js",
+description: "Книга о Node.js",
+authors: "Автор 2"
 }
 ]);
 ```
 
 ```
-db.books.find({ title: "Искомый_заголовок" });
+db.books.find({ title: "Вы не знаете JavaScript" });
 ```
 
 ```
-db.books.updateOne(
-  { _id: ObjectId("идентификатор_записи") },
+  { _id: ObjectId("001") },
   { $set: {
-    description: "новое_описание",
-    authors: "новые_авторы"
+    description: "Новое описание",
+    authors: "Новый автор"
   }}
 );
 ```
